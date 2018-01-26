@@ -26,7 +26,9 @@
 
 <a name='guide-basic'></a>
 
-- Only include one React component per file.
+<a name='guide-basic-1.1'></a>
+
+- [1.1](#guide-basic-1.1) Only include one React component per file.
 
   - However, multiple [Stateless, or Pure, Components](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions) are allowed per file.
 
@@ -41,7 +43,9 @@
 
 <a name='guide-classReactStateless'></a>
 
-- If you have internal state and/or refs, prefer `class extends React.Component` over `React.createClass`.
+<a name='guide-classReactStateless-2.1'></a>
+
+- [2.1](#guide-classReactStateless-2.1) If you have internal state and/or refs, prefer `class extends React.Component` over `React.createClass`.
 
   **eslint:** [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md), [`react/prefer-stateless-function`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md)
 
@@ -90,7 +94,9 @@
 
 <a name='guide-mixins'></a>
 
-- [Do not use mixins](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html).
+<a name='guide-mixins-3.1'></a>
+
+- [3.1](#guide-mixins-3.1) [Do not use mixins](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html).
 
   > Why? Mixins introduce implicit dependences, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.
 
@@ -100,9 +106,17 @@
 
 <a name='guide-naming'></a>
 
-- **Extensions:** Use `.jsx` extends for React compenents.
-- **Filename:** Use PascalCase for filenames. E.g., `ReservationCard.jsx`.
-- **Reference Naming:** Use PascalCase for React compnents and camelCase for their instances.
+<a name='guide-naming-4.1'></a>
+
+- [4.1](#guide-naming-4.1) **Extensions:** Use `.jsx` extends for React compenents.
+
+<a name='guide-naming-4.2'></a>
+
+- [4.2](#guide-naming-4.2) **Filename:** Use PascalCase for filenames. E.g., `ReservationCard.jsx`.
+
+<a name='guide-naming-4.3'></a>
+
+- [4.3](#guide-naming-4.3) **Reference Naming:** Use PascalCase for React compnents and camelCase for their instances.
 
   **eslint:** [`react/jsx-pascal-case`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
 
@@ -120,7 +134,9 @@
   const reservationItem = <ReservationCard />;
   ```
 
-- **Component Naming:** Use the filename as the component name. For example, `ReservationCard.jsx` should have a reference name of `ReservationCard`. However, for root components of a directory, use `index.js` as the filename and use the directory name as the component name.
+<a name='guide-naming-4.4'></a>
+
+- [4.4](#guide-naming-4.4) **Component Naming:** Use the filename as the component name. For example, `ReservationCard.jsx` should have a reference name of `ReservationCard`. However, for root components of a directory, use `index.js` as the filename and use the directory name as the component name.
 
   ```jsx
   // bad
@@ -133,7 +149,9 @@
   import Footer from './Footer';
   ```
 
-- **Higher-order Component Naming:** Use a composite of a higher-order component's name and the passed-in component's name as the `displayName` on the gernated component. For example, the higher-order component `withFoo()`, when passed a component `Bar` should produce a component with a `displayName` of `withFoo(Bar)`.
+<a name='guide-naming-4.5'></a>
+
+- [4.5](#guide-naming-4.5) **Higher-order Component Naming:** Use a composite of a higher-order component's name and the passed-in component's name as the `displayName` on the gernated component. For example, the higher-order component `withFoo()`, when passed a component `Bar` should produce a component with a `displayName` of `withFoo(Bar)`.
 
   > Why? A component's `displayName` may be used by developer tools or in error messages, and have a value that clearly expresses this relationship helps people understand what is happening.
 
@@ -160,7 +178,9 @@
   };
   ```
 
-- **Props Naming:** Avoid using DOM component prop names for different purposes.
+<a name='guide-naming-4.6'></a>
+
+- [4.6](#guide-naming-4.6) **Props Naming:** Avoid using DOM component prop names for different purposes.
 
   > Why? People expect props like `style` and `className` to mean one specific thing. Varying this API for a subset of your app makes the code less readable and less maintainable, and may cause bugs.
 
@@ -181,7 +201,9 @@
 
 <a name='guide-declaration'></a>
 
-- Do not use `displayName` for naming components. Instead, name the component by reference.
+<a name='guide-declaration-5.1'></a>
+
+- [5.1](#guide-declaration-5.1) Do not use `displayName` for naming components. Instead, name the component by reference.
 
   ```jsx
   // bad
@@ -201,7 +223,9 @@
 
 <a name='guide-alignment'></a>
 
-- Follow these alignment styles for JSX syntax.
+<a name='guide-alignment-6.1'></a>
+
+- [6.1](#guide-alignment-6.1) Follow these alignment styles for JSX syntax.
 
   **eslint:** [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md), [`react/jsx-closing-tag-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md)
 
@@ -234,7 +258,9 @@
 
 <a name='guide-quotes'></a>
 
-- Always use double quotes (`"`) for JSX attributes, but single quotes(`'`) for all other JS.
+<a name='guide-quotes-7.1'></a>
+
+- [7.1](#guide-quotes-7.1) Always use double quotes (`"`) for JSX attributes, but single quotes(`'`) for all other JS.
 
   **eslint:** [`jsx-quotes`](https://eslint.org/docs/rules/jsx-quotes)
 
@@ -260,7 +286,9 @@
 
 <a name='guide-spacing'></a>
 
-- Always include a single space in your self-closing tag.
+<a name='guide-spacing-8.1'></a>
+
+- [8.1](#guide-spacing-8.1) Always include a single space in your self-closing tag.
 
   **eslint:** [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces), [`react/jsx-tag-spacing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md)
 
@@ -279,7 +307,9 @@
   <Foo />
   ```
 
-- Do not pad JSX curly braces with spaces.
+<a name='guide-spacing-8.2'></a>
+
+- [8.2](#guide-spacing-8.2) Do not pad JSX curly braces with spaces.
 
   **eslint:** [`react/jsx-curly-spacing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md)
 
@@ -297,7 +327,9 @@
 
 <a name='guide-props'></a>
 
-- Always use camelCase for prop names.
+<a name='guide-props-9.1'></a>
+
+- [9.1](#guide-props-9.1) Always use camelCase for prop names.
 
   ```jsx
   // bad
@@ -313,7 +345,9 @@
   />
   ```
 
-- Omit the value of the prop when it is explicitly `true`.
+<a name='guide-props-9.2'></a>
+
+- [9.2](#guide-props-9.2) Omit the value of the prop when it is explicitly `true`.
 
   **eslint:** [`react/jsx-boolean-value`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md)
 
@@ -332,7 +366,9 @@
   <Foo hidden />
   ```
 
-- Always include an `alt` prop on `<img>` tags. If the image is presentational, `alt` can be an empty string or the `<img>` must have `role="presentation"`.
+<a name='guide-props-9.3'></a>
+
+- [9.3](#guide-props-9.3) Always include an `alt` prop on `<img>` tags. If the image is presentational, `alt` can be an empty string or the `<img>` must have `role="presentation"`.
 
   **eslint:** [`jsx-a11y/alt-text`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md)
 
@@ -350,7 +386,9 @@
   <img src="hello.jpg" role="presentation" />
   ```
 
-- Do not use words like "image", "photo", or "picture" in `<img>` `alt` props.
+<a name='guide-props-9.4'></a>
+
+- [9.4](#guide-props-9.4) Do not use words like "image", "photo", or "picture" in `<img>` `alt` props.
 
   **eslint:** [`jsx-a11y/img-redundant-alt`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md)
 
@@ -364,7 +402,9 @@
   <img src="hello.jpg" alt="Me waving hello" />
   ```
 
-- Use only valid, non-abstract [ARIA roles](https://www.w3.org/TR/wai-aria/roles#role_definitions).
+<a name='guide-props-9.5'></a>
+
+- [9.5](#guide-props-9.5) Use only valid, non-abstract [ARIA roles](https://www.w3.org/TR/wai-aria/roles#role_definitions).
 
   **eslint:** [`jsx-a11y/aria-role`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md)
 
@@ -379,7 +419,9 @@
   <div role="button" />
   ```
 
-- Do not use `accessKey` on elements.
+<a name='guide-props-9.6'></a>
+
+- [9.6](#guide-props-9.6) Do not use `accessKey` on elements.
 
   **eslint:** [`jsx-a11y/no-access-key`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md)
 
@@ -393,7 +435,9 @@
   <div />
   ```
 
-- Avoid using an array index as `key` prop, prefer a unique ID. ([why?](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318))
+<a name='guide-props-9.7'></a>
+
+- [9.7](#guide-props-9.7) Avoid using an array index as `key` prop, prefer a unique ID. ([why?](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318))
 
   ```jsx
   // bad
@@ -413,7 +457,9 @@
   )}
   ```
 
-- Always define explicit defaultProps for all non-required props.
+<a name='guide-props-9.8'></a>
+
+- [9.8](#guide-props-9.8) Always define explicit defaultProps for all non-required props.
 
   > Why? propTypes are a form of documentation, and procuding defaultProps means the reader of your code doesn't have to assume as much. In addition, it can mean that your code can omit certain type checks.
 
@@ -443,13 +489,17 @@
   };
   ```
 
-- Use spread props sparingly
+<a name='guide-props-9.9'></a>
+
+- [9.9](#guide-props-9.9) Use spread props sparingly
 
   > Why? Otherwise, you're more likely to pass unnecessary props down to components. And for React c15.6.1 and older, you could [pass invalid HTML attrivutes to the DOM](https://reactjs.org/blog/2017/09/08/dom-attributes-in-react-16.html).
 
 **Exceptions:**
 
-- HOCs that proxy down props and hoist propTypes
+<a name='guide-props-9.10'></a>
+
+- [9.10](#guide-props-9.10) HOCs that proxy down props and hoist propTypes
 
   ```jsx
   function HOC(WrappedComponent) {
@@ -466,7 +516,9 @@
   };
   ```
 
-- Spreading objects with known, explicit props. This can be particularly useful when testing React components with Mocha's beforeEach construct.
+<a name='guide-props-9.11'></a>
+
+- [9.11](#guide-props-9.11) Spreading objects with known, explicit props. This can be particularly useful when testing React components with Mocha's beforeEach construct.
 
   ```jsx
   export default function Foo {
@@ -485,7 +537,9 @@
 
 <a name='guide-refs'></a>
 
-- Always use ref callbacks.
+<a name='guide-refs-10.1'></a>
+
+- [10.1](#guide-refs-10.1) Always use ref callbacks.
 
   **eslint:** [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
 
@@ -507,7 +561,9 @@
 
 <a name='guide-parentheses'></a>
 
-- Wrap JSX tags in parentheses when they span more than one line.
+<a name='guide-parentheses-11.1'></a>
+
+- [11.1](#guide-parentheses-11.1) Wrap JSX tags in parentheses when they span more than one line.
 
   **eslint:** [`react/jsx-wrap-multilines`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md)
 
@@ -541,7 +597,9 @@
 
 <a name='guide-tags'></a>
 
-- Always self-close tags that have no children.
+<a name='guide-tags-12.1'></a>
+
+- [12.1](#guide-tags-12.1) Always self-close tags that have no children.
 
   **eslint:** [`react/self-closing-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
 
@@ -553,7 +611,9 @@
   <Foo variant="stuff" />
   ```
 
-- If your component has multi-line properties, close its tag on a new line.
+<a name='guide-tags-12.2'></a>
+
+- [12.2](#guide-tags-12.2) If your component has multi-line properties, close its tag on a new line.
 
   **eslint:** [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
@@ -576,7 +636,9 @@
 
 <a name='guide-methods'></a>
 
-- Use arrow functions to close over local variables.
+<a name='guide-methods-13.1'></a>
+
+- [13.1](#guide-methods-13.1) Use arrow functions to close over local variables.
 
   ```jsx
   function ItemList(props) {
@@ -593,7 +655,9 @@
   };
   ```
 
-- Bind event handlers for the render method in the constructor.
+<a name='guide-methods-13.2'></a>
+
+- [13.2](#guide-methods-13.2) Bind event handlers for the render method in the constructor.
 
   **eslint:** [`react/jsx-no-bind`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md)
 
@@ -629,7 +693,9 @@
    };
   ```
 
-- Do not use underscore prefix for internal methods of a React component.
+<a name='guide-methods-13.3'></a>
+
+- [13.3](#guide-methods-13.3) Do not use underscore prefix for internal methods of a React component.
 
   > Why? Underscore prefixes are cometimes used as a convention in other languages to denote privacy. But, unlike those languages, there is no native support for privacy in JavaScript, everything is public. Regardless of your intentions, adding underscore prefixes to your properties does not actually make them private, and any property (underscore-prefixed or not) should be treated as being public. See issues [#1024](https://github.com/airbnb/javascript/issues/1024), and [#490](https://github.com/airbnb/javascript/issues/490) fora  more in-depth discussion.
 
@@ -653,7 +719,9 @@
   };
   ```
 
-- Be sure to return a value in your `render` methods.
+<a name='guide-methods-13.4'></a>
+
+- [13.4](#guide-methods-13.4) Be sure to return a value in your `render` methods.
 
   **eslint:** [`react/require-render-return`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md)
 
@@ -675,7 +743,9 @@
 
 <a name='guide-ordering'></a>
 
-- Ordering for `class extends React.Component`:
+<a name='guide-ordering-14.1'></a>
+
+- [14.1](#guide-ordering-14.1) Ordering for `class extends React.Component`:
 
   1. optional `static` methods
   1. `constructor`
@@ -692,7 +762,9 @@
   1. *optional render methods* like `renderNavigation()` or `renderProfilePicture()`
   1. `render`
 
-- How to define `propTypes`, `defaultProps`, `contextTypes`, etc....
+<a name='guide-ordering-14.2'></a>
+
+- [14.2](#guide-ordering-14.2) How to define `propTypes`, `defaultProps`, `contextTypes`, etc....
 
   ```jsx
   import React from 'react';
@@ -724,7 +796,9 @@
   export default Link;
   ```
 
-- Ordering for `React.createClass`:
+<a name='guide-ordering-14.3'></a>
+
+- [14.3](#guide-ordering-14.3) Ordering for `React.createClass`:
 
   **eslint:** [`react/sort-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md)
 
@@ -756,7 +830,9 @@
 
 <a name='guide-isMounted'></a>
 
-- Do not use `isMounted`.
+<a name='guide-isMounted-15.1'></a>
+
+- [15.1](#guide-isMounted-15.1) Do not use `isMounted`.
 
   **eslint:** [`react/no-is-mounted`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md)
 
