@@ -1410,7 +1410,7 @@
   import { named1, named2 } from 'foo';
 
   // good
-  import foo, { named1, named2 } from 'foo;
+  import foo, { named1, named2 } from 'foo';
 
   // good
   import foo, {
@@ -1506,7 +1506,7 @@
   ```js
   // bad
   import fooSass from 'css!sass!foo.scss';
-  import barCss from 'style!css!bar.css;
+  import barCss from 'style!css!bar.css';
 
   // good
   import fooSass from 'foo.scss';
