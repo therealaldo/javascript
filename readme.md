@@ -1,7 +1,5 @@
 # Ultrasound JavaScript Style Guide
 
-<a name='guide'></a>
-
 *A mostly reasonable approach to JavaScript*
 
 > **Note:** this guide assumes you are using [Babel](https://babeljs.io/), and requires that you use [babel-preset-airbnb](https://npmjs.com/babel-preset-airbnb) or the equivalent. It also assumes you are installing shims/polyfills in your app, with [airbnb-browser-shims](https://npmjs.com/airbnb-browser-shims) or the equivalent.
@@ -49,6 +47,8 @@
 
 ## Types
 
+<a name='guide-types'></a>
+
 <a name='guide-types-1.1'></a>
 
 - [1.1](#guide-types-1.1) **Primitives:** When you access a primitive type, you work directly on its value.
@@ -90,11 +90,13 @@
 
 ## References
 
+<a name='guide-references'></a>
+
 <a name='guide-references-2.1'></a>
 
 - [2.1](#guide-references-2.1) Use `const` for all of your references; avoid using `var`.
 
-**eslint:** [`prefer_const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
+**eslint:** [`prefer-const`](https://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign.html)
 
   > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
 
@@ -149,6 +151,8 @@
 **[⬆ back to top](#toc)**
 
 ## Objects
+
+<a name='guide-objects'></a>
 
 <a name='guide-objects-3.1'></a>
 
@@ -343,7 +347,9 @@
 
 **[⬆ back to top](#toc)**
 
-## Objects
+## Arrays
+
+<a name='guide-arrays'></a>
 
 <a name='guide-arrays-4.1'></a>
 
@@ -504,6 +510,8 @@
 
 ## Destructuring
 
+<a name='guide-destructuring'></a>
+
 <a name='guide-destructuring-5.1'></a>
 
 - [5.1](#guide-destructuring-5.1) Use object destructuring when accessing and using multiple properties of an object.
@@ -584,6 +592,8 @@
 **[⬆ back to top](#toc)**
 
 ## Strings
+
+<a name='guide-strings'></a>
 
 <a name='guide-strings-6.1'></a>
 
@@ -684,6 +694,8 @@
 **[⬆ back to top](#toc)**
 
 ## Functions
+
+<a name='guide-functions'></a>
 
 <a name='guide-functions-7.1'></a>
 
@@ -1002,6 +1014,8 @@
 
 ## Arrow Functions
 
+<a name='guide-arrowFunctions'></a>
+
 <a name='guide-arrowFunctions-8.1'></a>
 
 - [8.1](#guide-arrowFunctions-8.1) When you must us an anonymous function (as when passing an inline callback), use arrow function notation.
@@ -1154,6 +1168,8 @@
 **[⬆ back to top](#toc)**
 
 ## Classes & Constructors
+
+<a name='guide-classesConstructors'></a>
 
 <a name='module+jsStyleGuide-classesConstructors-9.1'></a>
 
@@ -1325,6 +1341,8 @@
 **[⬆ back to top](#toc)**
 
 ## Modules
+
+<a name='guide-modules'></a>
 
 <a name='guide-modules-10.1'></a>
 
@@ -1499,6 +1517,8 @@
 
 ## Iterators & Generators
 
+<a name='guide-iteratorsGenerators'></a>
+
 <a name='guide-iteratorsGenerators-11.1'></a>
 
 - [11.1](#guide-iteratorsGenerators-11.1) Don't use iterators. Prefer JavaScript's higher-order functions instead of loops like `for-in` or `for-of`.
@@ -1612,6 +1632,8 @@
 
 ## Properties
 
+<a name='guide-properties'></a>
+
 <a name='guide-properties-12.1'></a>
 
 - [12.1](#guide-properties-12.1) Use dot notation when accessing properties.
@@ -1667,6 +1689,8 @@
 **[⬆ back to top](#toc)**
 
 ## Variables
+
+<a name='guide-variables'></a>
 
 <a name='guide-variables-13.1'></a>
 
@@ -1774,7 +1798,7 @@
   };
   ```
 
-<a name-'guide-variables-13.5'></a>
+<a name='guide-variables-13.5'></a>
 
 - [13.5](#guide-variables-13.5) Don't chain variable assignments.
 
@@ -1848,6 +1872,8 @@
 **[⬆ back to top](#toc)**
 
 ## Hoisting
+
+<a name='guide-hoisting'></a>
 
 <a name='guide-hoisting-14.1'></a>
 
@@ -1948,6 +1974,8 @@
 **[⬆ back to top](#toc)**
 
 ## Comparison Operators & Equality
+
+<a name='guide-comparisonOperatorsEquality'></a>
 
 <a name='guide-comparisonOperatorsEquality-15.1'></a>
 
@@ -2148,6 +2176,8 @@
 
 ## Blocks
 
+<a name='guide-blocks'></a>
+
 <a name='guide-blocks-16.1'></a>
 
 - [16.1](#guide-blocks-16.1) Use braces with all multi-line blocks.
@@ -2273,6 +2303,8 @@
 
 ## Control Statements
 
+<a name='guide-controlStatements'></a>
+
 <a name='guide-controlStatements-17.1'></a>
 
 - [17.1](#guide-controlStatements-17.1) In case your control statement (`if`, `while`, etc.) gets too long or exceeds the maximum line length, each (grouped) condition could be put into a new line. The logical operator should begin the line.
@@ -2325,6 +2357,8 @@
 **[⬆ back to top](#toc)**
 
 ## Comments
+
+<a name='guide-comments'></a>
 
 <a name='guide-comments-18.1'></a>
 
@@ -2465,6 +2499,8 @@
 **[⬆ back to top](#toc)**
 
 ## Whitespace
+
+<a name='guide-whitespace'></a>
 
 <a name='guide-whitespace-19.1'></a>
 
@@ -2849,6 +2885,8 @@
 
 ## Commas
 
+<a name='guide-commas'></a>
+
 <a name='guide-commas-20.1'></a>
 
 - [20.1](#guide-commas-20.1) Leading commas: **Nope.**
@@ -2994,6 +3032,8 @@
 
 ## Semicolons
 
+<a name='guide-semicolons'></a>
+
 <a name='guide-semicolons-21.1'></a>
 
 - [21.1](#guide-semicolons-21.1) **Yup.**
@@ -3048,6 +3088,8 @@
 **[⬆ back to top](#toc)**
 
 ## Type Casting & Coercion
+
+<a name='guide-typeCastingCoercion'></a>
 
 <a name='guide-typeCastingCoercion-22.1'></a>
 
@@ -3149,6 +3191,8 @@
 **[⬆ back to top](#toc)**
 
 ## Naming Conventions
+
+<a name='guide-namingConventions'></a>
 
 <a name='guide-namingConventions-23.1'></a>
 
@@ -3373,6 +3417,8 @@
 
 ## Accessors
 
+<a name='guide-accessors'></a>
+
 <a name='guide-accessors-24.1'></a>
 
 - [24.1](#guide-accessors-24.1) Accessor functions for properties are not required.
@@ -3446,6 +3492,8 @@
 
 ## Events
 
+<a name='guide-events'></a>
+
 <a name='guide-events-25.1'></a>
 
 - [25.1](#guide-events-25.1) When attaching data payloads to events (whehter DOM events or something more proprietary like Backbone events), pass an object literal (also known as a "hash") instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
@@ -3477,6 +3525,8 @@
 **[⬆ back to top](#toc)**
 
 ## jQuery
+
+<a name='guide-jquery'></a>
 
 <a name='guide-jquery-26.1'></a>
 
@@ -3553,6 +3603,8 @@
 
 ## ECMAScript 5 Compatibility
 
+<a name='guide-ecma5Compatibility'></a>
+
 <a name='guide-ecma5Compatibility-27.1'></a>
 
 - [27.1](#guide-ecma5Compatibility-27.1) Refer to [Kangax](https://twitter.com/kangax/)'s ES5 [compatibility table](https://kangax.github.io/es5-compat-table/)
@@ -3560,6 +3612,8 @@
 **[⬆ back to top](#toc)**
 
 ## ECMAScript 6+ (ES2015+) Styles
+
+<a name='guide-ecma6ES2015Styles'></a>
 
 <a name='guide-ecma6ES2015Styles-28.1'></a>
 
@@ -3589,6 +3643,8 @@
 **[⬆ back to top](#toc)**
 
 ## Standard Library
+
+<a name='guide-standardLibrary'></a>
 
 The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects) contains utilities that are functionally broken but remain for legacy reasons.
 
@@ -3631,6 +3687,8 @@ The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Refe
 
 ## Testing
 
+<a name='guide-testing'></a>
+
 <a name='guide-testing-30.1'></a>
 
 - [30.1](#guide-testing-30.1) **Yup.**
@@ -3656,6 +3714,8 @@ The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Refe
 
 ## Performance
 
+<a name='guide-performance'></a>
+
 <a name='guide-performance-31'></a>
 
 - [On Layout & Web Performance](https://www.kellegous.com/j/2013/01/26/layout-performance/)
@@ -3671,6 +3731,8 @@ The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Refe
 **[⬆ back to top](#toc)**
 
 ## Resources
+
+<a name='guide-resources'></a>
 
 <a name='guide-resources-32'></a>
 
@@ -3755,6 +3817,8 @@ The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Refe
 
 ## The JavaScript Style Guide Guide
 
+<a name='guide-jsStyleGuideGuide'></a>
+
 <a name='guide-jsStyleGuideGuide-33'></a>
 
   > We would like to thank the folks over at [Airbnb](https://github.com/airbnb) for writing such an amazing [style guide](https://github.com/airbnb/javascript/blob/master/README.md). We've modified small things here and there with which we respectfully disagree with.
@@ -3763,11 +3827,15 @@ The [Standard Library](https://developer.mozilla.org/en/docs/Web/JavaScript/Refe
 
 ## Contributors
 
+<a name='guide-contributors'></a>
+
 <a name='guide-contributors-34'></a>
 
 - [View Contributors](https://github.com/tunerinc/ultrasound/graphs/contributors)
 
 ## License
+
+<a name='guide-license'></a>
 
 <a name='guide-license-35'></a>
 
