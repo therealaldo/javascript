@@ -1,0 +1,27 @@
+{
+  "name": "ultrasound-style",
+  "version": "0.0.1",
+  "description": "A mostly reasonable approach to JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tunerinc/javascript"
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "ultrasound",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
+  ],
+  "author": "Aldo Gonzalez <aldo@tunerinc.com (https://twitter.com/therealaldo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tunerinc/javascript/issues"
+  },
+  "homepage": "https://github.com/tunerinc/javascript",
+  "devDependencies": {
+    "markdownlint-cli": "^0.3.1"
+  }
+}
